@@ -1,24 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Labels</title>
+    <title>Form Validation</title>
 </head>
 <body>
 
-<h2>Label Example</h2>
+<h2>Validation Form</h2>
 
 <form>
-    <label for="name">Name:</label>
-    <input type="text" id="name">
+    Name:
+    <input type="text"
+    placeholder="Enter Name"
+    required minlength="3">
     <br><br>
 
-    <label for="email">Email:</label>
-    <input type="email" id="email">
+    Age:
+    <input type="number"
+    min="18" max="60">
     <br><br>
 
-    <label for="age">Age:</label>
-    <input type="number" id="age">
+    Password:
+    <input type="password"
+    minlength="6" required>
+    <br><br>
+
+    Phone:
+    <input type="tel"
+    pattern="[0-9]{10}"
+    placeholder="10 digit number"
+    required>
+    <br><br>
+
+    <input type="submit" value="Submit">
 </form>
 
 </body>
-</html> 
+</html>
