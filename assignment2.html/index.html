@@ -1,24 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Text Inputs</title>
+    <title>Choice Inputs</title>
 </head>
 <body>
 
-<h2>Text Input Form</h2>
+<h2>Choice Input Form</h2>
 
 <form>
-    Name: <input type="text" placeholder="Enter Name"><br><br>
+    Gender:
+    <input type="radio" name="gender"> Male
+    <input type="radio" name="gender"> Female
+    <br><br>
 
-    Email: <input type="email" placeholder="Enter Email"><br><br>
+    Skills:
+    <input type="checkbox"> HTML
+    <input type="checkbox"> CSS
+    <input type="checkbox"> JavaScript
+    <br><br>
 
-    Password: <input type="password"><br><br>
+    Course:
+    <select>
+        <option>B.Tech</option>
+        <option>BCA</option>
+        <option>MCA</option>
+    </select>
+    <br><br>
 
-    Phone: <input type="tel"><br><br>
-
-    Website: <input type="url"><br><br>
-
-    Age: <input type="number"><br><br>
+    City:
+    <input list="cities">
+    <datalist id="cities">
+        <option value="Bareilly">
+        <option value="Delhi">
+        <option value="Lucknow">
+    </datalist>
 </form>
 
 </body>
