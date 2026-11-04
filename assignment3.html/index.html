@@ -1,29 +1,52 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-<title>TH Scope Example</title>
+    <title>Colspan and Rowspan</title>
 </head>
 <body>
 
+    
+<h2>Colspan and Rowspan Example</h2>
+
 <table border="1">
 
-<tr>
-<th scope="col">Name</th>
-<th scope="col">Course</th>
-<th scope="col">Marks</th>
-</tr>
+    <tr>
+        <th colspan="2">Student Details</th>
+        <th>Course</th>
+        <th>Marks</th>
+    </tr>
 
-<tr>
-<th scope="row">Rahul</th>
-<td>B.Tech</td>
-<td>85</td>
-</tr>
+    <tr>
+        <td rowspan="2">Aman</td>
+        <td>Delhi</td>
+        <td>B.Tech</td>
+        <td>85</td>
+    </tr>
 
-<tr>
-<th scope="row">Aman</th>
-<td>BCA</td>
-<td>90</td>
-</tr>
+    <tr>
+        <td>19 Years</td>
+        <td>BCA</td>
+        <td>90</td>
+    </tr>
+
+    <tr>
+        <td rowspan="2">Rahul</td>
+        <td>Agra</td>
+        <td>B.Tech</td>
+        <td>78</td>
+    </tr>
+
+    <tr>
+        <td>20 Years</td>
+        <td>BCA</td>
+        <td>88</td>
+    </tr>
+
+    <tr>
+        <td colspan="4">End of Student Records</td>
+    </tr>
+
 </table>
 
 </body>
