@@ -1,0 +1,174 @@
+
+/* Design Tokens */
+:root {
+    --primary-color: #2563eb;
+    --secondary-color: #1e293b;
+    --background-color: #f1f5f9;
+    --white-color: #ffffff;
+    --text-color: #334155;
+
+    --heading-font: 'Poppins', sans-serif;
+    --body-font: 'Roboto', sans-serif;
+
+    --small-spacing: 10px;
+    --medium-spacing: 20px;
+    --large-spacing: 40px;
+}
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    padding: var(--medium-spacing);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: var(--heading-font);
+    color: var(--white-color);
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: var(--medium-spacing);
+}
+
+.navbar ul li a {
+    color: var(--white-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar ul li a:hover {
+    color: #60a5fa;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(135deg, #dbeafe, #eff6ff);
+    padding: var(--large-spacing);
+}
+
+.hero-content h1 {
+    font-family: var(--heading-font);
+    font-size: 36px;
+    color: var(--secondary-color);
+}
+
+.hero-content h1 span {
+    color: var(--primary-color);
+}
+
+.hero-content h3 {
+    margin: var(--small-spacing) 0;
+}
+
+.hero-content p {
+    margin-bottom: var(--medium-spacing);
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.btn:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Common Sections */
+.section {
+    padding: var(--large-spacing) 10%;
+    text-align: center;
+}
+
+.section h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    margin-bottom: var(--medium-spacing);
+}
+
+/* Skills Cards */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: var(--medium-spacing);
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: var(--white-color);
+    padding: var(--medium-spacing);
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    color: var(--primary-color);
+    margin-bottom: var(--small-spacing);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+.project-card {
+    margin: auto;
+}
+
+/* Footer */
+footer {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: var(--medium-spacing);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: var(--small-spacing);
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-content h1 {
+        font-size: 26px;
+    }
+
+    .section {
+        padding: var(--medium-spacing);
+    }
+}
