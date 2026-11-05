@@ -1,0 +1,232 @@
+
+/* Basic Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fffaf3;
+    color: #333;
+}
+
+/* Navigation */
+header {
+    background-color: #3b2115;
+    padding: 18px;
+}
+
+nav {
+    text-align: center;
+}
+
+.logo {
+    color: #f4c27a;
+    margin-bottom: 12px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 12px;
+    display: inline-block;
+}
+
+nav a:hover {
+    color: #f4c27a;
+}
+
+/* Hero Section */
+.hero {
+    height: 450px;
+    background-image:
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+    url("https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=1400");
+
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    color: white;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.offer {
+    background-color: #d99a42;
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+
+.hero h1 {
+    font-size: 38px;
+    margin: 25px 0;
+}
+
+.hero p {
+    margin-bottom: 25px;
+}
+
+.btn {
+    background-color: #d99a42;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* About Section */
+.about {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.about h2,
+.services h2,
+.gallery h2,
+.contact h2 {
+    color: #653b25;
+    margin-bottom: 20px;
+}
+
+/* Services Section */
+.services {
+    text-align: center;
+    padding: 40px 15px;
+    background-color: #f5e8d8;
+}
+
+.card {
+    display: inline-block;
+    width: 27%;
+    padding: 30px 15px;
+    margin: 12px;
+    vertical-align: top;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+    margin-bottom: 15px;
+}
+
+/* Three Different Card Designs */
+.card-one {
+    background-color: #e6c49a;
+    border: 2px solid #a56a35;
+}
+
+.card-two {
+    background-color: #fff;
+    border-radius: 25px;
+    border: 2px solid #d99a42;
+}
+
+.card-three {
+    background-color: #3b2115;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Gallery Section */
+.gallery {
+    text-align: center;
+    padding: 50px 15px;
+}
+
+.gallery img {
+    width: 28%;
+    height: 200px;
+    object-fit: cover;
+    margin: 10px;
+    border-radius: 10px;
+    border: 3px solid #d99a42;
+}
+
+/* Contact Section */
+.contact {
+    text-align: center;
+    padding: 45px 15px;
+    background-color: #f5e8d8;
+}
+
+form {
+    width: 90%;
+    max-width: 450px;
+    margin: auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+button {
+    background-color: #653b25;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d99a42;
+}
+
+/* Footer */
+footer {
+    background-color: #3b2115;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+footer h3 {
+    color: #f4c27a;
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    display: inline-block;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 27px;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .gallery img {
+        width: 90%;
+    }
+
+    nav a {
+        margin: 6px;
+    }
+}
