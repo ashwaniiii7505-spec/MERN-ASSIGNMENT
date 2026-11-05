@@ -1,53 +1,68 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Colspan and Rowspan</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Inventory Table</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    
-<h2>Colspan and Rowspan Example</h2>
+    <h1>Product Inventory Management</h1>
 
-<table border="1">
+    <table>
+        <caption>Product Inventory Details</caption>
 
-    <tr>
-        <th colspan="2">Student Details</th>
-        <th>Course</th>
-        <th>Marks</th>
-    </tr>
+        <thead>
+            <tr>
+                <th colspan="5" scope="colgroup">Product Information</th>
+                <th colspan="5" scope="colgroup">Stock and Price Details</th>
+            </tr>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Product</th>
+                <th scope="col">Category</th>
+                <th scope="col">Brand</th>
+                <th scope="col">Size</th>
+                <th scope="col">Color</th>
+                <th scope="col">Price</th>
+                <th scope="col">Stock</th>
+                <th scope="col">Rating</th>
+                <th scope="col">Status</th>
+            </tr>
+        </thead>
 
-    <tr>
-        <td rowspan="2">Aman</td>
-        <td>Delhi</td>
-        <td>B.Tech</td>
-        <td>85</td>
-    </tr>
+        <tbody>
+            <tr><td>1</td><td>T-Shirt</td><td rowspan="2">Clothing</td><td>Nike</td><td>M</td><td>Black</td><td>799</td><td>25</td><td>4.5</td><td>Available</td></tr>
+            <tr><td>2</td><td>Shirt</td><td>Levis</td><td>L</td><td>White</td><td>999</td><td>30</td><td>4.2</td><td>Available</td></tr>
+            <tr><td>3</td><td>Jeans</td><td>Clothing</td><td>Levis</td><td>32</td><td>Blue</td><td>1499</td><td>15</td><td>4.7</td><td>Available</td></tr>
+            <tr><td>4</td><td>Shoes</td><td>Footwear</td><td>Adidas</td><td>9</td><td>White</td><td>2499</td><td>10</td><td>4.6</td><td>Available</td></tr>
+            <tr><td>5</td><td>Sandals</td><td>Footwear</td><td>Puma</td><td>8</td><td>Brown</td><td>899</td><td>20</td><td>4.1</td><td>Available</td></tr>
+            <tr><td>6</td><td>Watch</td><td>Accessories</td><td>Fastrack</td><td>Free</td><td>Black</td><td>1999</td><td>12</td><td>4.4</td><td>Available</td></tr>
+            <tr><td>7</td><td>Cap</td><td>Accessories</td><td>Nike</td><td>Free</td><td>Red</td><td>499</td><td>40</td><td>4.0</td><td>Available</td></tr>
+            <tr><td>8</td><td>Bag</td><td>Bags</td><td>Skybags</td><td>Large</td><td>Black</td><td>1299</td><td>18</td><td>4.3</td><td>Available</td></tr>
+            <tr><td>9</td><td>Wallet</td><td>Accessories</td><td>Wildcraft</td><td>Medium</td><td>Brown</td><td>599</td><td>22</td><td>4.2</td><td>Available</td></tr>
+            <tr><td>10</td><td>Jacket</td><td>Clothing</td><td>Puma</td><td>L</td><td>Black</td><td>2999</td><td>8</td><td>4.8</td><td>Available</td></tr>
+            <tr><td>11</td><td>Headphones</td><td>Electronics</td><td>Sony</td><td>Free</td><td>Black</td><td>1599</td><td>14</td><td>4.5</td><td>Available</td></tr>
+            <tr><td>12</td><td>Mouse</td><td>Electronics</td><td>Logitech</td><td>Free</td><td>White</td><td>699</td><td>35</td><td>4.3</td><td>Available</td></tr>
+            <tr><td>13</td><td>Keyboard</td><td>Electronics</td><td>HP</td><td>Standard</td><td>Black</td><td>899</td><td>17</td><td>4.1</td><td>Available</td></tr>
+            <tr><td>14</td><td>Mobile</td><td>Electronics</td><td>Samsung</td><td>128GB</td><td>Blue</td><td>15999</td><td>6</td><td>4.7</td><td>Available</td></tr>
+            <tr><td>15</td><td>Laptop</td><td>Electronics</td><td>Dell</td><td>512GB</td><td>Silver</td><td>55999</td><td>5</td><td>4.8</td><td>Available</td></tr>
+            <tr><td>16</td><td>Bottle</td><td>Kitchen</td><td>Cello</td><td>1 Litre</td><td>Green</td><td>299</td><td>50</td><td>4.0</td><td>Available</td></tr>
+            <tr><td>17</td><td>Mug</td><td>Kitchen</td><td>Milton</td><td>Medium</td><td>White</td><td>199</td><td>28</td><td>4.2</td><td>Available</td></tr>
+            <tr><td>18</td><td>Notebook</td><td>Stationery</td><td>Classmate</td><td>A4</td><td>Blue</td><td>99</td><td>60</td><td>4.4</td><td>Available</td></tr>
+            <tr><td>19</td><td>Pen</td><td>Stationery</td><td>Cello</td><td>Standard</td><td>Blue</td><td>20</td><td>100</td><td>4.1</td><td>Available</td></tr>
+            <tr><td>20</td><td>Calculator</td><td>Stationery</td><td>Casio</td><td>Standard</td><td>Black</td><td>499</td><td>16</td><td>4.6</td><td>Available</td></tr>
+        </tbody>
 
-    <tr>
-        <td>19 Years</td>
-        <td>BCA</td>
-        <td>90</td>
-    </tr>
-
-    <tr>
-        <td rowspan="2">Rahul</td>
-        <td>Agra</td>
-        <td>B.Tech</td>
-        <td>78</td>
-    </tr>
-
-    <tr>
-        <td>20 Years</td>
-        <td>BCA</td>
-        <td>88</td>
-    </tr>
-
-    <tr>
-        <td colspan="4">End of Student Records</td>
-    </tr>
-
-</table>
+        <tfoot>
+            <tr>
+                <td colspan="10">Total Products: 20 | Inventory Management System</td>
+            </tr>
+        </tfoot>
+    </table>
 
 </body>
 </html>
